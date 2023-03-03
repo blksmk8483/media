@@ -4,7 +4,7 @@ import { fetchUsers } from "../store";
 
 function UsersList() {
     const dispatch = useDispatch();
-    const {isLoading, data, error} = useSelector((state) => {
+    const { isLoading, data, error } = useSelector((state) => {
         return state.users;
     });
 
