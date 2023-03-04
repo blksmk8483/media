@@ -1,10 +1,46 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "Myra"
-        }
-    ],
-    "albums": [],
-    "photos": []
+  "users": [
+    {
+      "id": 1,
+      "name": "Myra"
+    },
+    {
+      "name": "Johnnie Jacobs",
+      "id": 2
+    },
+    {
+      "name": "Alex Pfannerstill",
+      "id": 3
+    },
+    {
+      "name": "Joanne Purdy",
+      "id": 4
+    },
+    {
+      "name": "Delbert Christiansen",
+      "id": 5
+    },
+    {
+      "name": "Wesley Tillman",
+      "id": 6
+    },
+    {
+      "name": "Mable Brakus",
+      "id": 7
+    },
+    {
+      "name": "Meghan Bayer",
+      "id": 8
+    },
+    {
+      "name": "Betsy Kutch V",
+      "id": 9
+    },
+    {
+      "name": "Mrs. Hector Rohan",
+      "id": 10
+    }
+  ],
+  "albums": [],
+  "photos": []
 }
