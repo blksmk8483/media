@@ -1,4 +1,4 @@
-import { useEffect} from "react";
+import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { fetchUsers, addUser } from "../store";
 import Skeleton from "./Skeleton";
@@ -42,13 +42,7 @@ function UsersList() {
         <div>
             <div className="flex flex-row justify-between m-3">
                 <h1 className="m-2 text-xl">Users</h1>
-                {
-                    isCreatingUser
-                        ? 'Creating User...'
-                        : <Button onClick={handleUserAdd}>
-                            + Add User
-                        </Button>
-                }
+                <Button loading={isCreatingUser} onClick={handleUserAdd}>+ Add User</Button>
                 {creatingUserError && 'Error creating user...'}
             </div>
             {renderedUsers}
