@@ -1,96 +1,20 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Myra"
-    },
-    {
-      "name": "Johnnie Jacobs",
-      "id": 2
-    },
-    {
-      "name": "Alex Pfannerstill",
-      "id": 3
-    },
-    {
-      "name": "Joanne Purdy",
-      "id": 4
-    },
-    {
-      "name": "Delbert Christiansen",
-      "id": 5
-    },
-    {
-      "name": "Wesley Tillman",
-      "id": 6
-    },
-    {
-      "name": "Mable Brakus",
-      "id": 7
-    },
-    {
-      "name": "Meghan Bayer",
-      "id": 8
-    },
-    {
-      "name": "Betsy Kutch V",
-      "id": 9
-    },
-    {
-      "name": "Mrs. Hector Rohan",
-      "id": 10
-    },
-    {
-      "name": "Tracy Cole",
-      "id": 11
-    },
-    {
-      "name": "Patricia Witting",
-      "id": 12
-    },
-    {
-      "name": "Sheldon Collier",
-      "id": 13
-    },
-    {
-      "name": "Todd Becker",
-      "id": 14
-    },
-    {
-      "name": "Kendra Ortiz",
+      "name": "David Lynch",
       "id": 15
     },
     {
-      "name": "Jo Swift",
+      "name": "Beth Lowe",
       "id": 16
     },
     {
-      "name": "Anna Funk",
-      "id": 17
-    },
-    {
-      "name": "Mr. Karl Schaden",
+      "name": "Shawn Dooley",
       "id": 18
     },
     {
-      "name": "Erika Ortiz",
+      "name": "Mr. Lloyd Upton",
       "id": 19
-    },
-    {
-      "name": "Nelson Rodriguez",
-      "id": 20
-    },
-    {
-      "name": "Mrs. Jodi Schaden",
-      "id": 21
-    },
-    {
-      "name": "Joel Flatley",
-      "id": 22
-    },
-    {
-      "name": "Jill Stoltenberg",
-      "id": 23
     }
   ],
   "albums": [],
