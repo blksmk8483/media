@@ -25,9 +25,6 @@ function UserListItem({ user }) {
         <ExpandablePanel header={header}>
             <AlbumsList user={user}/>
         </ExpandablePanel>
-
-
-
     );
 };
 
