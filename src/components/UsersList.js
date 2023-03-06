@@ -1,38 +1,26 @@
-import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useEffect} from "react";
+import { useSelector } from "react-redux";
 import { fetchUsers, addUser } from "../store";
 import Skeleton from "./Skeleton";
 import Button from './Button';
+import { useThunk } from "../hooks/use-thunks";
+
+
 
 function UsersList() {
-    const [isLoadingUsers, setIsLoadindUsers] = useState(false);
-    const [loadingUsersError, setLoadingUsersError] = useState(null);
-    const [isCreatingUser, setIsCreatingUser] = useState(false);
-    const [creatingUserError, setCreatingUserError] = useState(null);
-    const dispatch = useDispatch();
+    const [doFetchUsers, isLoadingUsers, loadingUsersError] = useThunk(fetchUsers);
+    const [doCreateUser, isCreatingUser, creatingUserError] = useThunk(addUser);
+
     const { data } = useSelector((state) => {
         return state.users;
     });
 
     useEffect(() => {
-        setIsLoadindUsers(true);
-        dispatch(fetchUsers())
-            .unwrap()
-            .then(() => {
-                setIsLoadindUsers(false);
-            })
-            .catch((err) => {
-                setLoadingUsersError(err);
-                setIsLoadindUsers(false);
-            });
-    }, [dispatch]);
+        doFetchUsers();
+    }, [doFetchUsers]);
 
     const handleUserAdd = () => {
-        setIsCreatingUser(true);
-        dispatch(addUser())
-            .unwrap()
-            .catch(err => setCreatingUserError(err))
-            .finally(() => setIsCreatingUser(false));
+        doCreateUser();
     };
 
     if (isLoadingUsers) {
@@ -56,10 +44,10 @@ function UsersList() {
                 <h1 className="m-2 text-xl">Users</h1>
                 {
                     isCreatingUser
-                    ? 'Creating User...'
-                    : <Button onClick={handleUserAdd}>
-                        + Add User
-                    </Button>
+                        ? 'Creating User...'
+                        : <Button onClick={handleUserAdd}>
+                            + Add User
+                        </Button>
                 }
                 {creatingUserError && 'Error creating user...'}
             </div>
