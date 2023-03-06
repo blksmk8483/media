@@ -22,7 +22,7 @@ function UsersList() {
         doCreateUser();
     };
 
-
+    
     let content;
     if (isLoadingUsers) {
         content = <Skeleton times={6} className='h-10 w-full' />;
@@ -31,7 +31,6 @@ function UsersList() {
     } else {
         content = data.map((user) => {
             return <UsersListItem key={user.id} user={user} />;
-           
         });
     }
 
