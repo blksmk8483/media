@@ -3,7 +3,7 @@ import { useRemoveAlbumMutation } from '../store';
 import Button from './Button';
 import ExpandablePanel from './ExpandablePanel';
 
-function AlbumsListItem({  album }) {
+function AlbumsListItem({ album }) {
     const [removeAlbum, results] = useRemoveAlbumMutation();
 
     const handleRemoveAlbum = () => {
@@ -12,11 +12,11 @@ function AlbumsListItem({  album }) {
 
     const header = (
         <>
-        <Button className='mr-2' loading={results.isLoading} onClick={handleRemoveAlbum} >
-            <GoTrashcan/>
-        </Button>
-        {album.title}
-      </>  
+            <Button className='mr-2' loading={results.isLoading} onClick={handleRemoveAlbum} >
+                <GoTrashcan />
+            </Button>
+            {album.title}
+        </>
     );
 
     return (

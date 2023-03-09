@@ -11,7 +11,7 @@ function AlbumsList({ user }) {
 
     const handleAddAlbum = () => {
         addAlbum(user);
-    } 
+    }
 
     let content;
     if (isLoading) {
@@ -20,7 +20,7 @@ function AlbumsList({ user }) {
         content = <div>Error loading albums.</div>
     } else {
         content = data.map(album => {
-           return <AlbumsListItem  key={album.id} album={album} />
+            return <AlbumsListItem key={album.id} album={album} />
         });
     }
 
@@ -28,9 +28,9 @@ function AlbumsList({ user }) {
         <div>
             <div className="m-2 flex flex-row items-center justify-between">
                 <h3 className="text-lg font-bold">Albums for {user.name}</h3>
-            <Button loading={results.isLoading} onClick={handleAddAlbum}>
-                + Add Album
-            </Button>
+                <Button loading={results.isLoading} onClick={handleAddAlbum}>
+                    + Add Album
+                </Button>
             </div>
             <div>{content}</div>
         </div>
