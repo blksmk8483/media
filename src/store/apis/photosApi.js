@@ -27,7 +27,7 @@ const photosApi = createApi({
                         body: {
                             albumId: album.id,
                             url: faker.image.abstract(150, 150, true)
-                        },
+                        }
                     };
                 },
             }),
@@ -43,5 +43,5 @@ const photosApi = createApi({
     },
 });
 
-export const { useFetchPhotosQuery, useAddPhotoMutation, useRemovePhotoMuation } = photosApi;
+export const { useFetchPhotosQuery, useAddPhotoMutation, useRemovePhotoMutation } = photosApi;
 export { photosApi };
