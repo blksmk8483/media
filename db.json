@@ -11,6 +11,10 @@
     {
       "name": "Mr. Lloyd Upton",
       "id": 19
+    },
+    {
+      "name": "Thelma Mraz Sr.",
+      "id": 20
     }
   ],
   "albums": [
@@ -18,6 +22,31 @@
       "userId": 16,
       "title": "Handcrafted Fresh Chips",
       "id": 22
+    },
+    {
+      "userId": 16,
+      "title": "Intelligent Concrete Fish",
+      "id": 23
+    },
+    {
+      "userId": 16,
+      "title": "Generic Bronze Shirt",
+      "id": 24
+    },
+    {
+      "userId": 16,
+      "title": "Licensed Bronze Chicken",
+      "id": 25
+    },
+    {
+      "userId": 18,
+      "title": "Oriental Frozen Shirt",
+      "id": 26
+    },
+    {
+      "userId": 18,
+      "title": "Bespoke Cotton Fish",
+      "id": 27
     }
   ],
   "photos": []
