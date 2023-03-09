@@ -23,8 +23,8 @@ const albumsApi = createApi({
             removeAlbum: builder.mutation({
                 query: (album) => {
                     return {
+                        url: `/albums/${album.id}`,
                         method: 'DELETE',
-                        url: `/albums/${album.id}`
                     };
                 }
             }),
