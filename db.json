@@ -19,11 +19,6 @@
   ],
   "albums": [
     {
-      "userId": 16,
-      "title": "Handcrafted Fresh Chips",
-      "id": 22
-    },
-    {
       "userId": 18,
       "title": "Oriental Frozen Shirt",
       "id": 26
@@ -37,6 +32,11 @@
       "userId": 16,
       "title": "Generic Fresh Soap",
       "id": 28
+    },
+    {
+      "userId": 16,
+      "title": "Luxurious Granite Bacon",
+      "id": 29
     }
   ],
   "photos": []
