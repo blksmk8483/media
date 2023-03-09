@@ -1,10 +1,6 @@
 {
   "users": [
     {
-      "name": "David Lynch",
-      "id": 15
-    },
-    {
       "name": "Beth Lowe",
       "id": 16
     },
@@ -19,19 +15,9 @@
   ],
   "albums": [
     {
-      "id": 10,
-      "title": "Hiking Trip",
-      "userId": 15
-    },
-    {
-      "userId": 15,
-      "title": "Rustic Metal Table",
-      "id": 11
-    },
-    {
-      "userId": 15,
-      "title": "Incredible Plastic Soap",
-      "id": 12
+      "userId": 16,
+      "title": "Handcrafted Fresh Chips",
+      "id": 22
     }
   ],
   "photos": []
